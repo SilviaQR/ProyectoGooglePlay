@@ -18,5 +18,19 @@ public abstract class Producto
         productosVendidos = 0;
     }
 
+    public void setVendido()
+    {
+        productosVendidos++;
+    }
     
+    public int getVendidos()
+    {
+        return productosVendidos;
+    }
+
+    public abstract String getNombre();
+    
+    public abstract double getPrecio();
+    
+    public abstract void vendido();
 }
